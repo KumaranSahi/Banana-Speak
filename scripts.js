@@ -8,5 +8,5 @@ translateButton.onclick=()=>{
     .then(response=>{
         outputElement.innerHTML=response.contents.translated
     }
-    )
+    ).catch(error=>console.log(error))
 }
